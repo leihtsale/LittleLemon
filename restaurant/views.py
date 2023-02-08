@@ -7,7 +7,7 @@ from rest_framework import (
 )
 
 from . import serializers
-from .models import Booking, Menu
+from .models import Booking, MenuItem
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -19,14 +19,14 @@ class UserViewSet(viewsets.ModelViewSet):
 
 class MenuItemView(generics.ListCreateAPIView):
 
-    queryset = Menu.objects.all()
+    queryset = MenuItem.objects.all()
     serializer_class = serializers.MenuSerializer
     permission_classes = [permissions.IsAuthenticated]
 
 
 class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
 
-    queryset = Menu.objects.all()
+    queryset = MenuItem.objects.all()
     serializer_class = serializers.MenuSerializer
     permission_classes = [permissions.IsAuthenticated]
 
