@@ -8,6 +8,7 @@ django = ">=3.2.4,<3.3"
 djangorestframework = ">=3.12.4,<3.13"
 django-filter = ">=22.1,<23"
 mysqlclient = ">=2.1.1,<2.2"
+djoser = ">=2.1.0,<2.2"
 
 [dev-packages]
 flake8 = ">=3.9.2,<3.10"
