@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from .models import Booking, Menu
 
 
-class User(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
