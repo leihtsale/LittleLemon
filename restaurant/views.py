@@ -5,19 +5,19 @@ from rest_framework import (
 )
 
 from . import serializers
-from .models import Booking, MenuItem
+from .models import Booking, Menu
 
 
-class MenuItemView(generics.ListCreateAPIView):
+class MenuView(generics.ListCreateAPIView):
 
-    queryset = MenuItem.objects.all()
+    queryset = Menu.objects.all()
     serializer_class = serializers.MenuSerializer
     permission_classes = [permissions.IsAuthenticated]
 
 
-class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
+class SingleMenuView(generics.RetrieveUpdateDestroyAPIView):
 
-    queryset = MenuItem.objects.all()
+    queryset = Menu.objects.all()
     serializer_class = serializers.MenuSerializer
     permission_classes = [permissions.IsAuthenticated]
 

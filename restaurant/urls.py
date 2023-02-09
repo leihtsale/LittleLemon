@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('menu/', views.MenuItemView.as_view()),
-    path('menu/<int:pk>', views.SingleMenuItemView.as_view()),
+    path('menu/', views.MenuView.as_view()),
+    path('menu/<int:pk>', views.SingleMenuView.as_view()),
 ]
