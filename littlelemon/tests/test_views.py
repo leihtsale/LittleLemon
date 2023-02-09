@@ -61,4 +61,4 @@ class MenuItemViewTest(TestCase):
         response = views.MenuItemView.as_view()(request)
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(serialized.data, response.data)
+        self.assertEqual(response.data, serialized.data)
