@@ -18,8 +18,8 @@
 | ```/restaurant/booking/tables/``` | ```GET``` | List bookings |
 | ```/restaurant/booking/tables/{booking_id}/``` | ```GET``` | Single booking view |
 | ```/restaurant/booking/tables/``` | ```POST``` | Create booking |
-| ```/restaurant/booking/tables/{booking_id}``` | ```UPDATE/PATCH``` | Update/patch booking |
-| ```/restaurant/booking/tables/{booking_id}``` | ```DELETE``` | Delete booking |
+| ```/restaurant/booking/tables/{booking_id}/``` | ```UPDATE/PATCH``` | Update/patch booking |
+| ```/restaurant/booking/tables/{booking_id}/``` | ```DELETE``` | Delete booking |
 
 ## Sample Screenshots
 
