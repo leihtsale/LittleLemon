@@ -40,6 +40,6 @@ class BookingViewSet(viewsets.ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = serializers.BookingSerializer
     permission_classes = [permissions.IsAuthenticated]
-    ordering_fields = ['no_of_guests', 'bookingdate']
+    ordering_fields = ['no_of_guests', 'booking_date']
     search_fields = ['name']
     throttle_classes = [UserRateThrottle]

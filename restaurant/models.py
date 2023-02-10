@@ -7,7 +7,7 @@ class Booking(models.Model):
     no_of_guests = models.PositiveSmallIntegerField(
                         validators=[MaxValueValidator(6)]
                     )
-    bookingdate = models.DateTimeField()
+    booking_date = models.DateTimeField()
 
     def __str__(self):
         return self.name
