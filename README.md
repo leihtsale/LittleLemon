@@ -1,7 +1,7 @@
 # LittleLemon
 
 ### **Model**
-![erd](https://res.cloudinary.com/dedalryr3/image/upload/v1676050385/meta/model_dhwnqb.png)
+![erd](https://res.cloudinary.com/dedalryr3/image/upload/v1676052403/meta/model_c41dyc.png)
 
 ### **Home page and Menu item endpoints**
 | Endpoint | Method | Purpose |
